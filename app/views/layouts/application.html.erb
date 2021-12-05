@@ -5,16 +5,14 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     
-    <%= link_to "Register", new_user_registration_path %>
-     <%= link_to "Sign In", new_user_session_path %>
-     <!-- <%= link_to "Signed Out", destroy_user_session_path %> -->
-     <%= link_to "View Book", books_path %>
-    
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+     <%= link_to "Register", new_user_registration_path %>
+     <%= link_to "Sign In", new_user_session_path %>
+     
     <%= yield %>
    
     
